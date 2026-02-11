@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container" id="player">
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoId = urlParams.get('id');
+
+        if (videoId) {
+            // 2. Monta a URL do YouTube com parâmetros de privacidade e limpeza
+            // rel=0 (não mostra vídeos de outros canais no fim)
+            // modestbranding=1 (remove parte da logo do YT)
+            const youtubeUrl = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&autoplay=0`;
+
+            // 3. Insere o iframe na página
+            document.getElementById('player').innerHTML = `
+                <iframe 
+                    src="${youtubeUrl}" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>`;
+        } else {
+            document.body.innerHTML = "<p style='color:white; text-align:center; padding-top:20%;'>Vídeo não encontrado.</p>";
+        }
+    </script>
+</body>
+
+</html>
