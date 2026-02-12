@@ -1,0 +1,21 @@
+{
+    "whatsapp": {
+        "number": "5511943068651",
+        "message": "Olá Andreia, gostaria de agendar uma consulta espiritual.",
+        "display": "(11) 94306-8651"
+    },
+    "social": {
+        "instagram": {
+            "url": "https://instagram.com/espirita_andreia",
+            "handle": "@espirita_andreia"
+        },
+        "tiktok": {
+            "url": "https://tiktok.com/@espirita.andreia",
+            "handle": "@espirita.andreia"
+        },
+        "email": {
+            "address": "espiritaandreia@gmail.com",
+            "display": "espiritaandreia@gmail.com"
+        }
+    }
+}

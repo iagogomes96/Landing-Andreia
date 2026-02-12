@@ -583,19 +583,19 @@ nav a:hover {
 }
 
 #home {
-    background-image: url('../assets/img/background-home.jpg'); 
+    background-image: url('../assets/img/background-home.webp'); 
 }
 
 #services {
-    background-image: url('../assets/img/background-services.jpg');
+    background-image: url('../assets/img/background-services.webp');
 }
 
 #contact {
-    background-image: url('../assets/img/background-contact.jpg');
+    background-image: url('../assets/img/background-contact.webp');
 }
 
 #cta-final {
-    background-image: url('../assets/img/background-cta.jpg');
+    background-image: url('../assets/img/background-cta.webp');
 }
 
 
