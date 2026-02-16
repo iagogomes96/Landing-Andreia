@@ -4,11 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espírita Andreia</title>
+    <title>Espírita Andreia | Amarração Amorosa e Consultas Espirituais</title>
     <!-- Google Tag Manager -->
 
     <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" as="image" href="assets/img/background-home.webp" type="image/webp">
+    <meta name="description"
+        content="Especialista em Amarração Amorosa, Abertura de Caminhos e Limpeza Espiritual. Agende sua consulta com Mãe de Santo para União de Casais e Trabalhos para Prosperidade. Atendimento sigiloso.">
+    <style>
+        /* ==========================================
+                    HEADER
+    ========================================== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: linear-gradient(to bottom,
+                    var(--primary-color) 80%,
+                    var(--primary-color) 90%,
+                    transparent 100%);
+            color: var(--text-primary);
+            border: none;
+            box-shadow: none;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        .mobile-menu-icon {
+            display: none;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .mobile-menu-icon .bar {
+            width: 30px;
+            height: 3px;
+            background-color: var(--white);
+            margin: 5px 0;
+            transition: var(--transition);
+        }
+
+        /* ==========================================
+                    HERO
+    ========================================== */
+        #home {
+            padding-top: 150px;
+            ;
+        }
+
+        .home-video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .home-video-media video {
+            width: 480px;
+            height: 848px;
+            aspect-ratio: 9 / 16;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .home-video-media,
+        .home-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-highlight {
+            color: var(--accent-blue);
+        }
+
+        .home-content p {
+            margin-bottom: 25px;
+            color: var(--text-primary);
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +128,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
-        <a href="" class="logo">Espírita Andreia</a>
+        <a href="" class="logo" alt="Logotipo Espírita Andreia - Aconselhamento Espiritual">Espírita Andreia</a>
         <div class="mobile-menu-icon" aria-label="Abrir menu" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -37,7 +148,8 @@
         <section id="home" class="hero parallax-section">
             <section class="home-video-grid container">
                 <figure class="home-video-media">
-                    <video src="assets/videos/presentation.mp4" controls poster="assets/img/perfil-header.webp">
+                    <video src="assets/videos/presentation.mp4" controls poster="assets/img/perfil-header.webp"
+                        alt="Taróloga Andreia especialista em amarração amorosa e união de casais">
                         Seu navegador não suporta vídeos.
                     </video>
                 </figure>
@@ -49,6 +161,10 @@
                     </h1>
                     <p>Infiltre na alma dele a vontade e o desejo de estar ao seu lado com quem tem mais de 25 anos de
                         experiência na área!</p>
+                    <p>
+                        Especialista em Amarração Amorosa e União de Casais. Descubra como trazer meu amor de volta com
+                        amarração definitiva
+                    </p>
                     <a href="#" target="_blank" class="bt-primary wa-link" aria-label="Conversar no WhatsApp">Agende sua
                         Consulta</a>
                 </article>
@@ -68,21 +184,30 @@
                             vida.
                             Com total sigilo, ela oferece a orientação espiritual que você precisa!
                         </p>
+                        <p>
+                            Andreia é uma renomada Mãe de Santo e Taróloga, com vasta experiência em Consultas
+                            Espirituais, jogo de Búzios, Cartas e Tarot. Atua como Cartomante auxiliando na Abertura de
+                            Caminhos e Previsões.
+                        </p>
                         <article class="social-links">
                             <h3>Siga nas Redes Sociais</h3>
                             <div class="social-icons">
                                 <a href="#" target="_blank" class="ig-link">
-                                    <img src="assets/img/instagram-icon.webp" alt="Instagram" class="icon-img">
+                                    <img src="assets/img/instagram-icon.webp" alt="Instagram" class="icon-img"
+                                        width="512" height="512">
                                 </a>
                                 <a href="#" target="_blank" class="tt-link">
-                                    <img src="assets/img/tik-tok-icon.webp" alt="Tik Tok" class="icon-img">
+                                    <img src="assets/img/tik-tok-icon.webp" alt="Tik Tok" class="icon-img" width="512"
+                                        height="512">
                                 </a>
                             </div>
                         </article>
                     </article>
 
                     <figure class="home-image-media">
-                        <img src="assets/img/perfil-about.webp" alt="Perfil Espírita Andreia">
+                        <img src="assets/img/perfil-about.webp"
+                            alt="Mãe de Santo Andreia realizando consultas espirituais com búzios e cartas" width="1280"
+                            height="960">
                     </figure>
                 </div>
             </div>
@@ -94,51 +219,95 @@
                 <section class="services-grid">
 
                     <article class="service-card">
-                        <i data-lucide="heart" class="service-icon"></i>
+                        <i data-lucide="heart" class="service-icon"
+                            alt="Ícone de coração representando amarração definitiva e reconciliação amorosa"></i>
                         <h3>Amarração Amorosa</h3>
-                        <p>O trabalho de amarração amorosa resolve vários problemas na área afetiva...</p>
+                        <p>Especialista em <strong>amarração definitiva</strong> e <strong>união de casais</strong>,
+                            Andreia é Especialista em casos
+                            amorosos e utiliza técnicas ancestrais
+                            para a <strong>reconciliação amorosa</strong>, ajudando você a entender como trazer seu amor
+                            de volta e
+                            manter meu amor aos meus pés com harmonia. História interrompidas merecem uma nova chance.
+                        </p>
                     </article>
 
                     <article class="service-card">
                         <i data-lucide="sparkles" class="service-icon"></i>
                         <h3>Simpatias</h3>
-                        <p>Nossas simpatias são projetadas para atrair bons fluidos...</p>
+                        <p>Realizamos o <strong>adoçamento amoroso</strong> e simpatias poderosas para fortalecer o
+                            <strong>casamento espiritual</strong>,
+                            promovendo a paz no relacionamento e garantindo que os caminhos afetivos estejam sempre
+                            abertos para a felicidade.
+                        </p>
                     </article>
 
                     <article class="service-card">
-                        <i data-lucide="shield-check" class="service-icon"></i>
-                        <h3>Benzimentos</h3>
-                        <p>Elimine energias negativas do seu comércio, casa ou família...</p>
+                        <i data-lucide="shield-check" class="service-icon"
+                            alt="Ícone de limpeza espiritual, banhos de descarrego e quebra de demanda"></i>
+                        <h3>Benzimentos e Limpeza</h3>
+                        <p>Oferecemos <strong>limpeza espiritual</strong> profunda e <strong>benzimentos</strong>
+                            tradicionais para quebra de demanda.
+                            <strong>Através de banhos de descarrego</strong>, eliminamos energias negativas da sua casa,
+                            família e
+                            ambiente de trabalho.
+                        </p>
                     </article>
 
                     <article class="service-card">
                         <i data-lucide="flame" class="service-icon"></i>
-                        <h3>Impotência Sexual</h3>
-                        <p>Resolva dificuldades no desempenho através da orientação espiritual...</p>
+                        <h3>Impotência Sexual (Orientação Afetiva)</h3>
+                        <p>Se você está enfrentando dificuldades que afetam sua confiança e o desempenho no
+                            relacionamento, Andreia oferece suporte espiritual para superar bloqueios emocionais. O foco
+                            é restaurar o vigor e a harmonia íntima, tratando as causas espirituais por trás de
+                            problemas que afetam a vida do casal.</p>
                     </article>
 
                     <article class="service-card">
-                        <i data-lucide="map" class="service-icon"></i>
+                        <i data-lucide="map" class="service-icon"
+                            alt="Ícone de abertura de caminhos e trabalhos para prosperidade"></i>
                         <h3>Abertura de Caminhos</h3>
-                        <p>Vença as barreiras que estão impedindo sua jornada rumo à prosperidade...</p>
+                        <p>Através de <strong>trabalhos para prosperidade</strong>, ajudamos a desobstruir sua jornada
+                            financeira e
+                            profissional, vencendo barreiras espirituais para que você alcance o sucesso e a abundância
+                            que merece.</p>
                     </article>
 
                     <article class="service-card">
-                        <i data-lucide="sunrise" class="service-icon"></i>
-                        <h3>Problemas com Vícios</h3>
-                        <p>Ajuda para alcoolismo, depressão, insônia e ansiedade...</p>
+                        <i data-lucide="sunrise" class="service-icon"
+                            alt="Ícone de equilíbrio espiritual para ansiedade, insônia e depressão"></i>
+                        <h3>Problemas com Vícios (Libertação)</h3>
+                        <p>Oferecemos um caminho de luz através de trabalhos para libertação de vícios, ajudando a
+                            fortalecer a vontade própria contra dependências. Este auxílio espiritual é focado em
+                            <strong>
+                                curar
+                                insônia
+                            </strong>, reduzir a <strong>ansiedade</strong> e combater a <strong>depressão</strong>,
+                            trazendo paz para
+                            filhos e famílias
+                            problemáticas.
+                        </p>
                     </article>
 
                     <article class="service-card">
                         <i data-lucide="layout-grid" class="service-icon"></i>
                         <h3>Consultas</h3>
-                        <p>Búzios africanos e cartas ciganas para aconselhamento profundo...</p>
+                        <p>Realize <strong>consultas espirituais</strong> completas com uma cartomante experiente.
+                            Utilizamos o jogo de
+                            <strong>búzios</strong>, <strong>cartas</strong> e <strong>tarot</strong> para trazer
+                            previsões assertivas e clareza sobre o seu destino.
+                        </p>
                     </article>
 
                     <article class="service-card">
-                        <i data-lucide="milestone" class="service-icon"></i>
+                        <i data-lucide="milestone" class="service-icon"
+                            alt="Ícone de proteção contra feitiçaria, bruxaria e magia negra"></i>
                         <h3>Trabalhos Espirituais</h3>
-                        <p>Andreia auxilia a dar um novo rumo à sua vida com sigilo absoluto.</p>
+                        <p>Como <strong>Mãe de Santo</strong> e <strong>Taróloga</strong>, Andreia realiza <strong>
+                                trabalhos
+                                rápidos
+                            </strong> e
+                            personalizados para
+                            qualquer necessidade espiritual, garantindo total sigilo e dedicação em cada ritual.</p>
                     </article>
                 </section>
             </div>
@@ -205,7 +374,7 @@
                         <div class="map-wrapper">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6178.876721816323!2d-46.54541465111569!3d-22.950887064333656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec98f2dc4ee33%3A0x187626c9f5cb978f!2sR.%20Bar%C3%A3o%20de%20Juqueri%2C%20229%20-%20Lavap%C3%A9s%2C%20Bragan%C3%A7a%20Paulista%20-%20SP%2C%2012900-370%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1770753949971!5m2!1spt-BR!2sus"
-                                height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
@@ -213,19 +382,20 @@
 
                     <div class="contact-info">
                         <a href="#" target="_blank" class="contact-item wa-link">
-                            <img src="assets/img/whatsapp-icon.webp" alt="WhatsApp" aria-label="Conversar no WhatsApp">
+                            <img src="assets/img/whatsapp-icon.webp" alt="WhatsApp" aria-label="Conversar no WhatsApp"
+                                width="512" height="512">
                             <span class="wa-text">carregando...</span>
                         </a>
                         <a href="#" target="_blank" class="contact-item ig-link">
-                            <img src="assets/img/instagram-icon.webp" alt="Instagram">
+                            <img src="assets/img/instagram-icon.webp" alt="Instagram" width="512" height="512">
                             <span class="ig-text">@carregando...</span>
                         </a>
                         <a href="#" target="_blank" class="contact-item tt-link">
-                            <img src="assets/img/tik-tok-icon.webp" alt="TikTok">
+                            <img src="assets/img/tik-tok-icon.webp" alt="TikTok" width="512" height="512">
                             <span class="tt-text">@carregando...</span>
                         </a>
                         <a href="#" class="contact-item mail-link">
-                            <img src="assets/img/gmail-icon.webp" alt="Email">
+                            <img src="assets/img/gmail-icon.webp" alt="Email" width="1024" height="1024">
                             <span class="mail-text">carregando...</span>
                         </a>
                     </div>

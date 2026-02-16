@@ -76,111 +76,11 @@ section {
 .section-title + .contact-grid {
     margin-top: 0; 
 }
-/* ==========================================
-                    HEADER
-    ========================================== */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    background: linear-gradient(
-        to bottom, 
-        var(--primary-color) 80%, 
-        var(--primary-color) 90%, 
-        transparent 100%
-    );
-    color: var(--text-primary);
-    border: none;
-    box-shadow: none;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-}
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-nav a {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: var(--transition);
-}
-
-nav a:hover {
-    color: var(--accent-blue);
-}
-
-.mobile-menu-icon {
-    display: none;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-.mobile-menu-icon .bar {
-    width: 30px;
-    height: 3px;
-    background-color: var(--white);
-    margin: 5px 0;
-    transition: var(--transition);
-}
-
-/* ==========================================
-                    HERO
-    ========================================== */
-#home {
-    padding-top: 150px;;
-}
-
-.home-video-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-}
-
-.home-video-media video {
-    width: 480px;
-    height: 848px;
-    aspect-ratio: 9 / 16;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.home-video-media, 
-.home-content {
-    flex: 1;
-    min-width: 300px;
-}
-.hero-highlight {
-    color: var(--accent-blue);
-}
-
-.home-content p {
-    margin-bottom: 25px;
-    color: var(--text-primary);
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ==========================================
@@ -374,8 +274,10 @@ nav a:hover {
 .map-wrapper {
     position: relative;
     width: 100%;
-    height: 450px; /* Mantém uma altura fixa confortável */
+    height: 450px;
+    aspect-ratio: 16 / 9;
     border-radius: 40px;
+    background: #eee;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -544,7 +446,7 @@ nav a:hover {
     ========================================== */
 .parallax-section {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -552,6 +454,7 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--primary-color);
 }
 
 .parallax-section::before {
@@ -583,7 +486,7 @@ nav a:hover {
 }
 
 #home {
-    background-image: url('../assets/img/background-home.webp'); 
+    background-image: url('../assets/img/background-home.webp');
 }
 
 #services {
@@ -602,6 +505,175 @@ nav a:hover {
 /* ==========================================
             RESPONSIVE BREAKPOINTS
     ========================================== */
+/* Ajuste para Tablets e Laptops Pequenos (iPad Pro, Laptops 1024px) */
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+
+    .map-address {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .contact-map-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+    }
+
+    .map-wrapper {
+        height: 350px; 
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        font-size: 1.1rem; 
+        justify-content: center; 
+    }
+}@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+
+    .map-address {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .contact-map-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+    }
+
+    .map-wrapper {
+        height: 350px; 
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        font-size: 1.1rem; 
+        justify-content: center; 
+    }
+}@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+
+    .map-address {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .contact-map-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+    }
+
+    .map-wrapper {
+        height: 350px; 
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        font-size: 1.1rem; 
+        justify-content: center; 
+    }
+}@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+
+    .map-address {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .contact-map-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+    }
+
+    .map-wrapper {
+        height: 350px; 
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        font-size: 1.1rem; 
+        justify-content: center; 
+    }
+}@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+
+    .map-address {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .contact-map-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+    }
+
+    .map-wrapper {
+        height: 350px; 
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        font-size: 1.1rem; 
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     section {
         padding: 40px 0;
